@@ -14,6 +14,7 @@ package medrecapp.Gui;
 import medrecapp.Gui.Internal.FrmIntSpesialis;
 import medrecapp.Gui.Internal.FrmIntJaminan;
 import java.awt.Dimension;
+import medrecapp.Gui.Internal.FrmIntStaf;
 
 /**
  *
@@ -347,7 +348,15 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuStafActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuStafActionPerformed
         // TODO add your handling code here:
-        
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntStaf fis = new FrmIntStaf();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuStafActionPerformed
 
     private void menuDataTindakanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDataTindakanActionPerformed

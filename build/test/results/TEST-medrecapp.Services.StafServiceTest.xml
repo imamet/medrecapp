@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="YUAN-PC" name="medrecapp.Services.JaminanServiceTest" skipped="0" tests="4" time="0.95" timestamp="2014-01-19T14:43:38">
+<testsuite errors="0" failures="0" hostname="YUAN-PC" name="medrecapp.Services.StafServiceTest" skipped="0" tests="4" time="0.68" timestamp="2014-01-19T14:43:41">
   <properties>
     <property name="default.javac.source" value="1.4" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -53,7 +53,7 @@
     <property name="file.encoding" value="Cp1252" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
     <property name="ant.project.default-target" value="default" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner medrecapp.Services.JaminanServiceTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\test\results\TEST-medrecapp.Services.JaminanServiceTest.xml crashfile=d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\junitvmwatcher2411854075032015408.properties propsfile=d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\junit3283160849874313595.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner medrecapp.Services.StafServiceTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\test\results\TEST-medrecapp.Services.StafServiceTest.xml crashfile=d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\junitvmwatcher6724232382650665198.properties propsfile=d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\junit3219063217893780936.properties" />
     <property name="built-jar.properties" value="d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build\built-jar.properties" />
     <property name="ant.file" value="d:\ITB\TIKES\TA\medRecApp\Pembagian commit\3. Yuanita\3. Spesialis, Jaminan, Staf\build.xml" />
     <property name="file.reference.fest-assert-1.2.jar" value="lib\fest-swing-1.2\fest-assert-1.2.jar" />
@@ -183,14 +183,14 @@
     <property name="java.specification.version" value="1.7" />
     <property name="sun.arch.data.model" value="32" />
   </properties>
-  <testcase classname="medrecapp.Services.JaminanServiceTest" name="a_insertJaminan" time="0.57" />
-  <testcase classname="medrecapp.Services.JaminanServiceTest" name="b_updateJaminan" time="0.04" />
-  <testcase classname="medrecapp.Services.JaminanServiceTest" name="c_deleteJaminan" time="0.03" />
-  <testcase classname="medrecapp.Services.JaminanServiceTest" name="d_getAllJaminan" time="0.0" />
-  <system-out><![CDATA[1. serviceInsertJaminan
-2. serviceUpdateJaminan
-3. serviceDeleteJaminan
-4. serviceGetAllJaminan
+  <testcase classname="medrecapp.Services.StafServiceTest" name="a_insertStaf" time="0.42" />
+  <testcase classname="medrecapp.Services.StafServiceTest" name="b_updateStaf" time="0.08" />
+  <testcase classname="medrecapp.Services.StafServiceTest" name="c_deleteStaf" time="0.07" />
+  <testcase classname="medrecapp.Services.StafServiceTest" name="d_getAllStaf" time="0.0" />
+  <system-out><![CDATA[1. serviceInsertStaf
+2. serviceUpdateStaf
+3. serviceDeleteStaf
+4. serviceGetAllStaf
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
