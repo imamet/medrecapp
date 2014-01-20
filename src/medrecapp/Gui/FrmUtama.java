@@ -14,6 +14,9 @@ package medrecapp.Gui;
 import medrecapp.Gui.Internal.FrmIntSpesialis;
 import medrecapp.Gui.Internal.FrmIntJaminan;
 import java.awt.Dimension;
+import medrecapp.Gui.Internal.FrmIntDokter;
+import medrecapp.Gui.Internal.FrmIntListPasien;
+import medrecapp.Gui.Internal.FrmIntObat;
 import medrecapp.Gui.Internal.FrmIntStaf;
 
 /**
@@ -275,7 +278,16 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPasienActionPerformed
         // TODO add your handling code here:
-        
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntListPasien fip = new FrmIntListPasien();
+        fip.setSize(jDesktopPane1.getSize());        /**************** MAXIMIZE Internal Frame *****************/
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fip.getSize();
+        fip.setLocation((parentSize.width - childSize.width)/2, (parentSize.height - childSize.height)/2);
+        jDesktopPane1.add(fip);
+        fip.show();
+        fip.toFront();
     }//GEN-LAST:event_menuPasienActionPerformed
 
     private void menuJaminanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuJaminanActionPerformed
@@ -293,7 +305,15 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuObatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuObatActionPerformed
         // TODO add your handling code here:
-        
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntObat fis = new FrmIntObat();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuObatActionPerformed
 
     private void menuPendaftaranPasBaruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPendaftaranPasBaruActionPerformed
@@ -338,7 +358,15 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuDokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDokterActionPerformed
         // TODO add your handling code here:
-        
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntDokter fis = new FrmIntDokter();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuDokterActionPerformed
 
     private void menuPerawatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPerawatActionPerformed
