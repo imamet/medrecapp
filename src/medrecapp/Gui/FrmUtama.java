@@ -16,7 +16,10 @@ import java.awt.Dimension;
 import medrecapp.Gui.Internal.FrmIntDokter;
 import medrecapp.Gui.Internal.FrmIntListPasien;
 import medrecapp.Gui.Internal.FrmIntObat;
+import medrecapp.Gui.Internal.FrmIntPasien;
+import medrecapp.Gui.Internal.FrmIntPendaftaran;
 import medrecapp.Gui.Internal.FrmIntPerawat;
+import medrecapp.Gui.Internal.FrmIntPoliklinik;
 import medrecapp.Gui.Internal.FrmIntStaf;
 import medrecapp.Gui.Internal.FrmIntTindakan;
 
@@ -320,34 +323,112 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuPendaftaranPasBaruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPendaftaranPasBaruActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntPasien fis = new FrmIntPasien();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPendaftaranPasBaruActionPerformed
 
     private void menuPoliDalamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliDalamActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        poliTujuan = "Dalam";
+        FrmIntPoliklinik fis = new FrmIntPoliklinik();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPoliDalamActionPerformed
 
     private void menuPendaftaranPasLamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPendaftaranPasLamaActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntPendaftaran fis = new FrmIntPendaftaran();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPendaftaranPasLamaActionPerformed
 
     private void menuPoliJantungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliJantungActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        poliTujuan = "Jantung";
+        FrmIntPoliklinik fis = new FrmIntPoliklinik();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPoliJantungActionPerformed
 
     private void menuPoliParuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliParuActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        poliTujuan = "Paru-paru";
+        FrmIntPoliklinik fis = new FrmIntPoliklinik();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPoliParuActionPerformed
 
     private void menuPoliBedahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliBedahActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        poliTujuan = "Bedah";
+        FrmIntPoliklinik fis = new FrmIntPoliklinik();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPoliBedahActionPerformed
 
     private void menuPoliMataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliMataActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        poliTujuan = "Mata";
+        FrmIntPoliklinik fis = new FrmIntPoliklinik();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPoliMataActionPerformed
 
     private void menuPoliTHTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliTHTActionPerformed
         // TODO add your handling code here:
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        poliTujuan = "tht";
+        FrmIntPoliklinik fis = new FrmIntPoliklinik();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuPoliTHTActionPerformed
 
     private void menuDokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDokterActionPerformed
