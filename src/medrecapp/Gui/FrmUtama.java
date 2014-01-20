@@ -12,6 +12,7 @@
 package medrecapp.Gui;
 
 import medrecapp.Gui.Internal.FrmIntSpesialis;
+import medrecapp.Gui.Internal.FrmIntJaminan;
 import java.awt.Dimension;
 
 /**
@@ -278,12 +279,20 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuJaminanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuJaminanActionPerformed
         // TODO add your handling code here:
-        
+        jDesktopPane1.removeAll();
+        jDesktopPane1.repaint();
+        FrmIntJaminan fis = new FrmIntJaminan();
+        Dimension parentSize = jDesktopPane1.getSize();
+        Dimension childSize = fis.getSize();
+        fis.setLocation((parentSize.width - childSize.width) / 2, (parentSize.height - childSize.height) / 2);        
+        jDesktopPane1.add(fis);
+        fis.show();
+        fis.toFront();
     }//GEN-LAST:event_menuJaminanActionPerformed
 
     private void menuObatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuObatActionPerformed
         // TODO add your handling code here:
-       
+        
     }//GEN-LAST:event_menuObatActionPerformed
 
     private void menuPendaftaranPasBaruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPendaftaranPasBaruActionPerformed
@@ -308,12 +317,12 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuPoliParuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliParuActionPerformed
         // TODO add your handling code here:
-        
+             
     }//GEN-LAST:event_menuPoliParuActionPerformed
 
     private void menuPoliBedahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliBedahActionPerformed
         // TODO add your handling code here:
-        
+       
     }//GEN-LAST:event_menuPoliBedahActionPerformed
 
     private void menuPoliMataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPoliMataActionPerformed
@@ -343,7 +352,7 @@ public class FrmUtama extends javax.swing.JFrame {
 
     private void menuDataTindakanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDataTindakanActionPerformed
         // TODO add your handling code here:
-        
+       
     }//GEN-LAST:event_menuDataTindakanActionPerformed
 
     private void menuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuExitActionPerformed
@@ -351,6 +360,7 @@ public class FrmUtama extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_menuExitActionPerformed
 
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane jDesktopPane1;
