@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="asus-PC" name="medrecapp.Services.PasienServiceTest" skipped="0" tests="4" time="0.314" timestamp="2014-01-19T14:21:23">
+<testsuite errors="0" failures="0" hostname="asus-PC" name="medrecapp.Services.ResepServiceTest" skipped="0" tests="20" time="1.139" timestamp="2014-01-19T14:21:29">
   <properties>
     <property name="default.javac.source" value="1.7" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -79,7 +79,7 @@
     <property name="ant.project.default-target" value="default" />
     <property name="libs.hibernate-persistence.javadoc" value="" />
     <property name="libs.ejb3-persistence.classpath" value="C:\Program Files\NetBeans 6.9.1\java\modules\ext\hibernate\ejb3-persistence.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner medrecapp.Services.PasienServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\test\results\TEST-medrecapp.Services.PasienServiceTest.xml crashfile=F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\junitvmwatcher507603702714850392.properties propsfile=F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\junit6233057733274078731.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner medrecapp.Services.ResepServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\test\results\TEST-medrecapp.Services.ResepServiceTest.xml crashfile=F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\junitvmwatcher2524058099272449179.properties propsfile=F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\junit5393276768049864246.properties" />
     <property name="built-jar.properties" value="F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build\built-jar.properties" />
     <property name="libs.junit.src" value="" />
     <property name="ant.file" value="F:\Contoh Kasus MedrecApp\Cara-1 (Delta)\10. Spesialis, Jaminan, Staf, Obat, Pasien, Dokter, Perawat, Tindakan, Rekam Medis, Resep\build.xml" />
@@ -271,14 +271,48 @@
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.arch.data.model" value="64" />
   </properties>
-  <testcase classname="medrecapp.Services.PasienServiceTest" name="a_insertPasien" time="0.232" />
-  <testcase classname="medrecapp.Services.PasienServiceTest" name="b_updatePasien" time="0.003" />
-  <testcase classname="medrecapp.Services.PasienServiceTest" name="c_deletePasien" time="0.003" />
-  <testcase classname="medrecapp.Services.PasienServiceTest" name="d_getAllPasien" time="0.001" />
-  <system-out><![CDATA[1. serviceInsertPasien
-2. serviceUpdatePasien
-3. serviceDeletePasien
-4. serviceGetAllPasien
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="a_insertDataSpesialis" time="0.671" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="b_insertDataJaminan" time="0.017" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="c_insertDataPerawat" time="0.031" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="d_insertDataDokter" time="0.019" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="e_insertDataStaf" time="0.014" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="f_insertDataPasien" time="0.017" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="g_insertRekamMedis" time="0.026" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="h_insertDataObat" time="0.019" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="i_insertResep" time="0.007" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="j_updateResep" time="0.006" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="k_getAllResep" time="0.002" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="l_deleteResep" time="0.005" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="m_deleteDataObat" time="0.008" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="n_deleteDataRekmed" time="0.011" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="o_deleteDataJaminan" time="0.005" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="p_deleteDataPerawat" time="0.011" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="q_deleteDataDokter" time="0.009" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="r_deleteDataStaf" time="0.004" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="s_deleteDataPasien" time="0.008" />
+  <testcase classname="medrecapp.Services.ResepServiceTest" name="t_deleteDataSpesialis" time="0.005" />
+  <system-out><![CDATA[1. insertDataSpesialis
+2. insertDataJaminan
+3. insertDataPerawat
+4. insertDataDokter
+5. insertDataStaf
+6. insertDataPasien
+7. insertRekamMedis
+8. insertDataObat
+--------------------------------------
+9. serviceInsertResep
+10. serviceUpdateResep
+11. serviceGetAllResep
+12. serviceDeleteResep
+--------------------------------------
+13. deleteDataObat
+14. deleteDataRekmed
+15. deleteDataJaminan
+16. deleteDataPerawat
+17. deleteDataDokter
+18. deleteDataStaf
+19. deleteDataPasien
+20. deleteDataSpesialis
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
